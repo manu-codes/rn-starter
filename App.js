@@ -1,14 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Application from './src/application'
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from 'redux'
+import itemApp from './src/reducers'
+import mySaga from './src/sagas'
+const sagaMiddleware = createSagaMiddleware()
+const store = createStore(itemApp, applyMiddleware(sagaMiddleware));
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text> your phone to open the developer menu.</Text>
-      </View>
+      <Provider store={store}>
+        <Application/>
+     </Provider>
     );
   }
 }
