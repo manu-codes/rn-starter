@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Application from './src/application'
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from 'redux'
+import createSagaMiddleware from 'redux-saga'
 import itemApp from './src/reducers'
 import mySaga from './src/sagas'
 const sagaMiddleware = createSagaMiddleware()
@@ -12,8 +13,8 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <Application/>
-     </Provider>
+        <Application />
+      </Provider>
     );
   }
 }
