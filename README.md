@@ -3,13 +3,13 @@
 
 
 clone this project
-npm install
-npm start
-npm run ios / npm run android
+### `npm install`
+### `npm start`
+### `npm run ios`  /   npm run android
 
 in another command prompt start the mock server for mock login process.
 
-npm run mock
+### `npm run mock`
 
 
 
