@@ -4,8 +4,10 @@
 
 clone this project
 `npm install`
+
  `npm start`
-`npm run ios`  /   npm run android
+
+`npm run ios`      or       `npm run android`
 
 in another command prompt start the mock server for mock login process.
 
