@@ -1,7 +1,13 @@
 
 
 
+It is a simple boiler plate project for using the combination of [react-native](https://facebook.github.io/react-native/), [redux](https://redux.js.org/) and [saga](https://github.com/redux-saga/redux-saga)
 
+This application simply lands in a login page, and user can enter username and password to land in his profile screen. Application typically concentrated on understanding the flow of data in react and redux. [Side effects (asynchronous operations)](https://redux.js.org/docs/faq/Actions.html#actions-side-effects) are handled by saga.
+
+
+
+### Usage
 clone this project
 
 Run the below commands one by one 
