@@ -1,4 +1,4 @@
-## React native Redux Saga Axios minimal Boilerplate
+## React native Redux Saga Axios login Boilerplate
 
 It is a simple boiler plate project for using the combination of [react-native](https://facebook.github.io/react-native/), [redux](https://redux.js.org/) and [saga](https://github.com/redux-saga/redux-saga).
 
