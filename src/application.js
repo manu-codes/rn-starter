@@ -31,24 +31,20 @@ import Logged from './pages/logged';
 class AppHome extends React.Component {
 
   render() {
-    return this.props.loginStatus ? <Logged /> : <Notlogged />
+    return this.props.loginStatus ? <Logged {...this.props}/> : <Notlogged />
   }
 
 }
 
 const mapStateToProps = state => {
+  console.log(state);
   return {
-    loginStatus: state.loginStatus
+    loginStatus: state.loginReducer.loginStatus,
+    user:state.loginReducer.user
   }
 }
 
-// const mapDispatchToProps = dispatch => {
-//   return {
-//     doLogin: () => dispatch({
-//       type: 'DO_LOGIN'
-//     })
-//   }
-// }
+
 
 export default connect(
   mapStateToProps

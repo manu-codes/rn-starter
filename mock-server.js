@@ -3,11 +3,20 @@ var url = require('url');
 
 http.createServer(function (req, res) {
     var q = url.parse(req.url, true).query;
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    if (q.username == 'admin' && q.password == 'admin') {
-        res.end(JSON.stringify({ token: new Date().valueOf(), loginStatus: 1 }));
+
+    console.log(q);
+    if (q.username.toLowerCase() == 'admin' && q.password.toLowerCase() == 'admin') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        var user = { username: q.username, loggedInTime: new Date().toString() }
+        setInterval(function () {
+            res.end(JSON.stringify({ token: new Date().valueOf(), loginStatus: 1, user }));
+        }, 1000)
     } else {
-        res.end(JSON.stringify({ loginStatus: 0 }));
+        res.writeHead(401, { 'Content-Type': 'application/json' });
+        setInterval(function () {
+            res.end(JSON.stringify({ loginStatus: 0 }));
+        }, 500)
+
     }
 
 }).listen(8080, function () {

@@ -1,23 +1,31 @@
 import { call, put, takeEvery, takeLatest } from 'redux-saga/effects'
+import { DO_LOGIN, LOGIN_SUCCESS, LOGIN_ERROR } from '../actions/constants';
+import axios from 'axios';
 
 
-// worker Saga: will be fired on USER_FETCH_REQUESTED actions
-function* fetchUser(action) {
-   try {
-      const user = yield call(Api.fetchUser, action.payload.userId);
-      yield put({type: "USER_FETCH_SUCCEEDED", user: user});
-   } catch (e) {
-      yield put({type: "USER_FETCH_FAILED", message: e.message});
-   }
+function* login(action) {
+  try {
+    const response = yield call(axios.get,
+      'http://localhost:8080/',
+      { params: { username: action.username, password: action.password } });
+
+    yield put({ type: LOGIN_SUCCESS, data: response.data });
+  } catch (e) {
+    yield put({ type: LOGIN_ERROR, message: e.message });
+  }
+
+
+
+
 }
 
 /*
   Starts fetchUser on each dispatched `USER_FETCH_REQUESTED` action.
   Allows concurrent fetches of user.
 */
-function* mySaga() {
-  yield takeEvery("USER_FETCH_REQUESTED", fetchUser);
-}
+// function* mySaga() {
+//   yield takeLatest("USER_FETCH_REQUESTED", fetchUser);
+// }
 
 /*
   Alternatively you may use takeLatest.
@@ -27,7 +35,8 @@ function* mySaga() {
   and only the latest one will be run.
 */
 function* mySaga() {
-  yield takeLatest("USER_FETCH_REQUESTED", fetchUser);
+  console.log('saga init..')
+  yield takeLatest(DO_LOGIN, login);
 }
 
 export default mySaga;

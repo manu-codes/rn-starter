@@ -7,7 +7,10 @@ import createSagaMiddleware from 'redux-saga'
 import itemApp from './src/reducers'
 import mySaga from './src/sagas'
 const sagaMiddleware = createSagaMiddleware()
-const store = createStore(itemApp, applyMiddleware(sagaMiddleware));
+const store = createStore(itemApp,
+  applyMiddleware(sagaMiddleware));
+
+sagaMiddleware.run(mySaga);
 
 export default class App extends React.Component {
   render() {

@@ -6,10 +6,10 @@ import LoginScreen from './LoginScreen';
 
 
 
-const RootTabs = TabNavigator({
+const NotLoggedUserTab = TabNavigator({
   Home: {
     screen: LoginScreen,
   }
 });
 
-export default RootTabs;
+export default NotLoggedUserTab;
