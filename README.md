@@ -1,4 +1,5 @@
 
+
 ## React native Redux Saga Axios login Boilerplate
 
 It is a simple boiler plate project for using the combination of [react-native](https://facebook.github.io/react-native/), [redux](https://redux.js.org/) and [saga](https://github.com/redux-saga/redux-saga).
@@ -15,14 +16,15 @@ Node modules used -
  6. redux
  7. redux-saga
 
-<img src="https://image.ibb.co/kzxaDm/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_19.png" width="350" height="665" alt="home page"/>
+*Login page*
+<img src="https://image.ibb.co/kzxaDm/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_19.png" width="350" height="665" alt="login page"/>
 
 --
-
+*Profile page*
 <img src="https://image.ibb.co/bT8RKR/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_38.png" width="350" height="665" alt="Profile page"/>
 
 --
-
+*login error alert*
 <img src="https://image.ibb.co/giXWm6/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_52.png" width="350" height="665" alt="login error message"/>
 
 
