@@ -3,6 +3,9 @@
 
 
 clone this project
+
+Run the below commands one by one 
+
 `npm install`
 
  `npm start`
