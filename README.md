@@ -15,9 +15,16 @@ Node modules used -
  6. redux
  7. redux-saga
 
-![home page](https://image.ibb.co/kzxaDm/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_19.png)
-![Profile page](https://image.ibb.co/bT8RKR/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_38.png)
-![login error message](https://image.ibb.co/giXWm6/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_52.png)
+<img src="https://image.ibb.co/kzxaDm/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_19.png" width="350" height="665" alt="home page"/>
+
+--
+
+<img src="https://image.ibb.co/bT8RKR/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_38.png" width="350" height="665" alt="Profile page"/>
+
+--
+
+<img src="https://image.ibb.co/giXWm6/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_52.png" width="350" height="665" alt="login error message"/>
+
 
 ### Usage
 clone this project
