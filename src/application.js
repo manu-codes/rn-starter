@@ -29,9 +29,13 @@ import Notlogged from "./pages/notlogged";
 import Logged from './pages/logged';
 
 class AppHome extends React.Component {
-
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.error) {
+      alert('Incorrect username or password.')
+    }
+  }
   render() {
-    return this.props.loginStatus ? <Logged {...this.props}/> : <Notlogged />
+    return this.props.loginStatus ? <Logged {...this.props} /> : <Notlogged />
   }
 
 }
@@ -40,7 +44,8 @@ const mapStateToProps = state => {
   console.log(state);
   return {
     loginStatus: state.loginReducer.loginStatus,
-    user:state.loginReducer.user
+    user: state.loginReducer.user,
+    error: state.loginReducer.error
   }
 }
 

@@ -6,7 +6,6 @@ import { connect } from 'react-redux'
 class ProfileScreen extends React.Component {
 
     render() {
-        console.log(this.props)
         return <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>{`Hello ${this.props.user.username}!!`}</Text>
             <Text>{`logged at ${this.props.user.loggedInTime}!!`}</Text>

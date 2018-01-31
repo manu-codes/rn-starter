@@ -9,9 +9,9 @@ export const doLogin = (username, password) => {
     }
 }
 
-
+// NOT USED this action, add for reference
 export const getLoggedUser = () => {
     return {
-        type: GET_LOGGED_USER
+        type: GET_LOGGED_USER_LOCAL
     }
 }

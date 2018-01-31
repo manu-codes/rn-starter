@@ -11,7 +11,7 @@ function* login(action) {
 
     yield put({ type: LOGIN_SUCCESS, data: response.data });
   } catch (e) {
-    yield put({ type: LOGIN_ERROR, message: e.message });
+    yield put({ type: LOGIN_ERROR, error: e.message });
   }
 
 
