@@ -1,10 +1,18 @@
+## React native Redux Saga Axios minimal Boilerplate
 
+It is a simple boiler plate project for using the combination of [react-native](https://facebook.github.io/react-native/), [redux](https://redux.js.org/) and [saga](https://github.com/redux-saga/redux-saga).
 
+This application simply lands in a login page, and user can enter username and password to land in his profile screen. Application typically concentrated on understanding the flow of data in react and redux. [Side effects (asynchronous operations)](https://redux.js.org/docs/faq/Actions.html#actions-side-effects) are handled by saga. So kept the project as simple as possible, there is no fancy ui and only minimal node modules included for start development with this tech stack.
 
-It is a simple boiler plate project for using the combination of [react-native](https://facebook.github.io/react-native/), [redux](https://redux.js.org/) and [saga](https://github.com/redux-saga/redux-saga)
+Node modules used - 
 
-This application simply lands in a login page, and user can enter username and password to land in his profile screen. Application typically concentrated on understanding the flow of data in react and redux. [Side effects (asynchronous operations)](https://redux.js.org/docs/faq/Actions.html#actions-side-effects) are handled by saga.
-
+ 1. axios
+ 2. react
+ 3. react-native
+ 4. react-navigation
+ 5. react-redux
+ 6. redux
+ 7. redux-saga
 
 
 ### Usage
