@@ -1,6 +1,4 @@
-import Notlogged from "./pages/notlogged";
 
-import React from 'react';
 // import { View, Text } from 'react-native';
 // import { TabNavigator } from 'react-navigation';
 
@@ -25,15 +23,33 @@ import React from 'react';
 //   },
 // });
 
+import React from 'react';
+import { connect } from 'react-redux'
+import Notlogged from "./pages/notlogged";
+import Logged from './pages/logged';
 
 class AppHome extends React.Component {
 
   render() {
-    return <Notlogged/>
+    return this.props.loginStatus ? <Logged /> : <Notlogged />
   }
 
 }
 
+const mapStateToProps = state => {
+  return {
+    loginStatus: state.loginStatus
+  }
+}
 
-export default AppHome;
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     doLogin: () => dispatch({
+//       type: 'DO_LOGIN'
+//     })
+//   }
+// }
 
+export default connect(
+  mapStateToProps
+)(AppHome)
