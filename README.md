@@ -18,7 +18,7 @@ Run the below commands one by one
 
 `npm run ios`      or       `npm run android`
 
-in another command prompt start the mock server for mock login process.
+In another command prompt/ bash start the mock server for mock login process. simple node server runs at 8080 which logs in if username 'admin' and password 'admin'. Can be modified as per usage or use a different API itself
 
 `npm run mock`
 
