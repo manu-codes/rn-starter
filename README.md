@@ -3,20 +3,20 @@
 
 
 clone this project
-### `npm install`
-### `npm start`
-### `npm run ios`  /   npm run android
+`npm install`
+ `npm start`
+`npm run ios`  /   npm run android
 
 in another command prompt start the mock server for mock login process.
 
-### `npm run mock`
+`npm run mock`
 
 
 
 
 
 
-Create react native guide :- 
+### Create react native guide :- 
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
