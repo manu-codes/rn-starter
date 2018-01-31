@@ -16,6 +16,8 @@ Node modules used -
  6. redux
  7. redux-saga
 
+### Screenshots
+
 *Login page*
 
 <img src="https://image.ibb.co/kzxaDm/Simulator_Screen_Shot_i_Phone_6_2018_01_31_at_18_19_19.png" width="350" height="665" alt="login page"/>
